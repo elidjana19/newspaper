@@ -1,0 +1,331 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+.flex {
+  display: flex;
+}
+
+.container {
+  max-width: 75em;
+  width: 100%;
+  margin: 0 auto;
+}
+
+/* header */
+.h-container {
+  max-width: 125em;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: red;
+  color: white;
+  height: 100px;
+}
+.title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 7px;
+}
+h1 {
+  font-size: 30px;
+}
+nav ul {
+  display: flex;
+  gap: 15px;
+
+  list-style-type: none;
+}
+.border {
+  border-right: 2px solid rgb(198, 196, 196);
+}
+nav a {
+  text-decoration: none;
+  padding-right: 8px;
+  color: white;
+}
+input[type="search"] {
+  padding: 10px;
+  width: 18%;
+}
+#login-btn {
+  background-color: #abcacb;
+  color: red;
+  padding: 14px 20px;
+  margin-left: 8px;
+  border: none;
+  cursor: pointer;
+}
+
+/* dialog */
+dialog {
+    padding: 40px;
+  }
+  
+  dialog button {
+    background-color: red;
+    border: none;
+    padding: 10px;
+    color: white;
+    border-radius: 3px;
+  }
+  dialog input {
+    padding: 10px;
+  }
+  
+  ::backdrop {
+    backdrop-filter: blur(5px); /* to blur the content behind the dialog */
+  }
+  
+
+/* main */
+main {
+  display: flex;
+  max-width: 1200px;
+  width: 100%;
+  margin-top: 1rem;
+  gap: 1rem;
+}
+
+.main-article {
+  flex: 3;
+  padding: 1rem;
+}
+
+.headline h2 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.headline img {
+  width: 100%;
+  height: auto;
+  margin-bottom: 1rem;
+}
+
+.sub-articles {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1rem;
+}
+
+.sub-articles article {
+  flex: 1;
+  margin-right: 1rem;
+}
+
+.sub-articles article a {
+  text-decoration: none;
+  color: black;
+}
+
+.sub-articles article a:hover {
+  color: red;
+}
+
+.sub-articles img {
+  width: 100%;
+  height: auto;
+  margin-bottom: 0.5rem;
+}
+
+.sidebar {
+  flex: 1;
+  padding: 17px;
+  background-color: #f8f8f8;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.sidebar a {
+  text-decoration: none;
+  color: black;
+}
+.sidebar a:hover {
+  color: red;
+}
+.news-category {
+  margin-bottom: 1rem;
+  display: grid;
+  grid-template-columns: auto auto;
+  border-bottom: 1px solid rgb(185, 185, 185);
+  column-gap: 5px;
+}
+
+.news-category h3 {
+  font-size: 15px;
+  justify-self: start;
+}
+.news-category img {
+  width: 120px;
+  height: 100px;
+}
+
+/* ad */
+
+.ad {
+  margin: 100px;
+}
+.ad img {
+  position: relative;
+  left: 12%;
+}
+
+/* top stories*/
+article {
+  margin-bottom: 70px;
+}
+
+.top-stories {
+  text-align: left;
+}
+
+.top-stories h2 {
+  font-size: 2rem;
+  color: #d80027;
+  margin-bottom: 1rem;
+}
+
+.stories-grid {
+  display: flex;
+  gap: 1rem;
+}
+
+.story {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  background-color: #f8f8f8;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  border-radius: 8px;
+  position: relative;
+}
+
+.story img {
+  width: 100%;
+  height: auto;
+}
+
+.story h3 {
+  font-size: 1rem;
+  padding: 1rem;
+  margin: 0;
+  color: #fff;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.5); 
+  z-index: 1;
+}
+
+.story h3 a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.story h3::before {
+  content: "";
+  position: absolute;
+  top: -10px;
+  left: 0;
+  width: 50px;
+  height: 2px;
+  background-color: #d80027;
+}
+
+.story a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.story a:hover {
+  text-decoration: underline;
+}
+
+
+/* latest news */
+
+.cards {
+  display: grid;
+  grid-template-columns: auto auto auto auto; 
+  grid-gap: 20px; 
+  row-gap: 50px;
+  margin-bottom: 40px;
+}
+.card {
+  color: black;
+  width: 285px;
+  height: 190px;
+}
+.latest-news h1 {
+  color: red;
+}
+
+.card img {
+  width: 100%;
+  height: 100%;
+}
+.card a {
+  color: black;
+  text-decoration: none;
+  font-size: 15px;
+}
+.card a:hover {
+  color: red;
+}
+
+/* footer */
+
+footer {
+  background-color: black;
+  color: white;
+  bottom: 0px;
+  padding: 30px 0px;
+}
+.footer-content {
+  width: 60%;
+}
+
+.grid {
+  display: grid;
+  grid-template-rows: auto auto auto; 
+  grid-gap: 50px; 
+}
+
+.social {
+  display: grid;
+  grid-template-columns: auto auto;
+  align-items: center;
+}
+.social .icons i {
+  margin: 30px;
+}
+
+.links {
+  display: grid;
+  grid-template-columns: 500px auto auto auto;
+  border-bottom: 1px solid rgb(146, 146, 146);
+  padding-bottom: 60px;
+}
+.links div {
+  border-right: 1px solid rgb(146, 146, 146);
+}
+.links p {
+  margin-left: 0px;
+}
+
+.links ul {
+  list-style-type: none;
+}
+.links ul li a {
+  text-decoration: none;
+  color: white;
+}
+

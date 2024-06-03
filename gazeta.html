@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="gazeta.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="h-container">
+        <div class="title">
+          <h1>Express</h1>
+          <i class="fa-solid fa-earth-europe"></i>
+          <i class="fa-solid fa-magnifying-glass"></i>
+        </div>
+
+        <nav>
+          <ul>
+            <li><a href="#" class="border">Lajme</a></li>
+            <li><a href="#" class="border">Sport</a></li>
+            <li><a href="#" class="border">Op/Ed</a></li>
+            <li><a href="#" class="border">Roze</a></li>
+            <li><a href="#" class="border">Shneta</a></li>
+            <li><a href="#" class="border">Te tjera</a></li>
+            <li><a href="#">Foleja</a></li>
+          </ul>
+        </nav>
+
+        <input type="search" placeholder="Kerkoni produkte ne foleja.com" />
+
+        <button id="login-btn">LOGIN</button>
+      </div>
+    </header>
+
+    <!-- dialog element -->
+
+    <dialog>
+      <button><i class="fa-solid fa-circle-xmark"></i></button>
+      <form action="">
+        <input
+          type="email"
+          placeholder="Put email"
+          required
+          pattern="[A-Za-z0-9\._%+\-]+@[A-Za-z0-9\.\-]+\.[A-Za-z]{2,}"
+          title="Please enter a valid email address"
+        />
+        <input
+          type="password"
+          placeholder="Password"
+          required
+          pattern="^(?=.*[A-Z])[A-Za-z0-9@$!%*?&]{8,}$"
+          title="Password must start with a capital letter and be at least 8 characters long"
+        />
+        <button>Login</button>
+      </form>
+    </dialog>
+
+    <main class="container">
+      <section class="main-article">
+        <article class="story">
+          <h3>
+            E Mundi Ragmi Mustafin, Arbër Pajaziti Shpall Fitoren Në Bujanoc,
+            Falënderon Voteusit
+          </h3>
+          <img src="../images/Capture1.jpg" alt="Arbër Pajaziti" />
+        </article>
+        <div class="sub-articles">
+          <article>
+            <img src="../images/Capture2.jpg" alt="Ambassador" />
+            <a href=""
+              >Ambasadori suedez: E kuptoj shqetesimin per Asociacionin, por
+              referencatme Republiken e Srpska jane te padrejta</a
+            >
+          </article>
+          <article>
+            <img src="../images/capture.jpg" alt="Kurti" />
+            <a href=""
+              >Kurti: Kosova do t’i fuqizoje raportet me Turqine ne dy fusha</a
+            >
+          </article>
+          <article>
+            <img src="../images/capture4.jpg" alt="Radar" />
+            <a href
+              >Radar: Vuçiç e shndërroi veriun e Kosoves ne Gjermani Lindore me
+              ndihmen e Radoiçiqit</a
+            >
+          </article>
+        </div>
+      </section>
+      <aside class="sidebar">
+        <h1 style="color: red">Lajme</h1>
+        <section class="news-category">
+          <img src="../images/futboll.png" alt="" />
+          <div class="txt">
+            <h3>Futboll</h3>
+            <a href=""
+              >Munishi: Nëse e marrim me kualitet, City duhet me i pasë nja 7</a
+            >
+          </div>
+        </section>
+        <section class="news-category">
+          <img src="../images/totaj.jpg" alt="" />
+          <div class="txt">
+            <h3>Lajme</h3>
+            <a href=""
+              >Totaj ankohet për mungesë përkrahje nga Qeveria: Investimet</a
+            >
+          </div>
+        </section>
+        <section class="news-category">
+          <img src="../images/himare.png" alt="" />
+          <div class="txt">
+            <h3>Shqiperi</h3>
+            <a href=""
+              >Himarë / Biznesmeni bie nga kati i dytë i banesës, ishte i
+              dehur</a
+            >
+          </div>
+        </section>
+        <section class="news-category">
+          <img src="../images/bb.jpg" alt="" />
+          <div class="txt">
+            <h3>Rozë</h3>
+            <a href=""
+              >Heidi dhe Romeo shijojnë lidhjen jashtë shtëpisë së BBVA</a
+            >
+          </div>
+        </section>
+        <section class="news-category">
+          <img src="../images/horoskopi.png" alt="" />
+          <div class="txt">
+            <h3>Horoskopi</h3>
+            <a href="">Ja cfare thone yjet per kete jave</a>
+          </div>
+        </section>
+        <section class="news-category">
+          <img src="../images/rrjetet.jpg" alt="" />
+          <div class="txt">
+            <h3>Studim i ri</h3>
+            <a href="">Reduktoni perdorimin e rrjeteve sociale...</a>
+          </div>
+        </section>
+      </aside>
+    </main>
+
+    <!-- ad -->
+    <aside class="ad container">
+      <img src="../images/ad.jpg" alt="Ad" />
+    </aside>
+
+    <!-- top stories -->
+    <section>
+      <div class="top-stories container">
+        <h2>Top Stories</h2>
+        <div class="stories-grid">
+          <article class="story">
+            <img src="../images/capture.jpg" alt="Arbër Pajaziti" />
+            <h3>
+              <a href="#"
+                >E mundi Ragmi Mustafin, Arbër Pajaziti shpall fitoren në
+                Bujanoc, falënderon voteusit</a
+              >
+            </h3>
+          </article>
+          <article class="story">
+            <img src="../images/LGBT.jpg" alt="Event" />
+            <h3><a href="#">Sot nisë Java e Krenarisë në Prishtinë</a></h3>
+          </article>
+          <article class="story">
+            <img src="../images/arditasinani.jpg" alt="Ardita Sinani" />
+            <h3>
+              <a href="#"
+                >Ardita Sinani pasi shpalli fitoren në Preshevë reagon në
+                Facebook: Faleminderit me Mendje dhe Zemër</a
+              >
+            </h3>
+          </article>
+          <article class="story">
+            <img src="../images/Ardita-Sinani.jpg" alt="Ardita Sinani" />
+            <h3><a href="#">Ardita Sinani shpall fitoren në Preshevë</a></h3>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <aside class="ad container">
+      <img src="../images/procredit.jpg" alt="" />
+    </aside>
+
+    <!-- latest news -->
+
+    <section>
+      <div class="latest-news container">
+        <h1>Me te Fundit</h1>
+        <div class="cards">
+          <article class="card">
+            <img src="../images/capture.jpg" alt="" />
+            <h5>
+              <a href=""
+                >Kurti:Kosova do ti fuqizoje raportet me Turqine ne dy fusha</a
+              >
+            </h5>
+          </article>
+          <article class="card">
+            <img src="../images/Dez.jpg" alt="" />
+            <h5><a href="">Vazhdon dezinsektimi selektiv</a></h5>
+          </article>
+          <article class="card">
+            <img src="../images/Capture1.jpg" alt="" />
+            <h5>
+              <a href=""
+                >E mundi Ragmi Mustafin, Arbër Pajaziti shpall fitoren në
+                Bujanoc, falënderon voteusit</a
+              >
+            </h5>
+          </article>
+          <article class="card">
+            <img src="../images/zelensky.jpg" alt="" />
+            <h5>
+              <a href=""
+                >Zelensky ne Filipine per te kerkuar mbeshtetje per samitin e
+                paqes</a
+              >
+            </h5>
+          </article>
+          <article class="card">
+            <img src="../images/veriu.jpg" alt="" />
+            <h5><a href="">Raci: Vucic e shnderroi veriun e Kosoves</a></h5>
+          </article>
+          <article class="card">
+            <img src="../images/totaj.jpg" alt="" />
+            <h5>
+              <a href="">Totaj ankohej per mungese perkrahje nga qeveria</a>
+            </h5>
+          </article>
+          <article class="card">
+            <img src="../images/polici.png" alt="" />
+            <h5>
+              <a href=""
+                >Vdes polici qe u plagos ne sulmin me thike ne Gjermani</a
+              >
+            </h5>
+          </article>
+          <article class="card">
+            <img src="../images/gjemani.jpg" alt="" />
+            <h5><a href="">Tronditje ne Gjermani pas vdekjes se policit</a></h5>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="container grid">
+        <div class="social">
+          <h1>Gazeta Express</h1>
+          <div class="icons">
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-youtube"></i>
+          </div>
+        </div>
+        <div class="links">
+          <p>
+            Ky portal mirëmbahet nga Gazeta Express sh.p.k.. Materialet dhe
+            informacionet në këtë portal nuk mund të kopjohen, të shtypen ose të
+            përdoren në çfarëdo forme tjetër për qëllime përfitimi.
+          </p>
+
+          <div>
+            <ul>
+              <li><a href="">Lajme</a></li>
+              <li><a href="">Shqiperi</a></li>
+              <li><a href="">English</a></li>
+              <li><a href="">Maqedoni</a></li>
+            </ul>
+          </div>
+          <div>
+            <ul>
+              <li><a href="">Lajme</a></li>
+              <li><a href="">Shqiperi</a></li>
+              <li><a href="">English</a></li>
+              <li><a href="">Maqedoni</a></li>
+            </ul>
+          </div>
+          <div>
+            <ul>
+              <li><a href="">Lajme</a></li>
+              <li><a href="">Shqiperi</a></li>
+              <li><a href="">English</a></li>
+              <li><a href="">Maqedoni</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="rights">
+          <span>All rights are reserved</span>
+          <span>Gazeta Express 2024</span>
+        </div>
+      </div>
+    </footer>
+
+    <script src="gazeta.js"></script>
+  </body>
+</html>
